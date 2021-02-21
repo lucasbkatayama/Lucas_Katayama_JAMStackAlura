@@ -69,9 +69,14 @@ ReviewContainer.Inner = styled.div`
   background-color: white;
   border-radius: 4px;
   padding: 5rem;
-  padding-right: 8rem;
   flex-direction: column;
   color: #444;
+  @media(max-width: 768px) {
+    padding: 2rem;
+    padding-right: 8rem;
+    
+  }
+  padding-right: 8rem;
 `;
 
 const Card = styled.div`

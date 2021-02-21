@@ -33,7 +33,7 @@ export default function ScrollToTop() {
       {isVisible
         && (
         <div onClick={scrollToTop}>
-          <img src={arrow} alt="Go to top" style={{ width: 50 }} />
+          <img src={arrow} alt="Go to top" style={{ width: 45 }} />
         </div>
         )}
     </Container>
@@ -43,7 +43,7 @@ export default function ScrollToTop() {
 const Container = styled.div`
   position: fixed;
   bottom: 2rem;
-  right: 2rem;
+  right: 1.5rem;
   animation: fadeIn 700ms ease-in-out 1s both;
   cursor: pointer;
   z-index: 1000
