@@ -1,10 +1,18 @@
-import styled from 'styled-components'
+import React from 'react';
+import Home from '../src/sections/Home';
+import About from '../src/sections/About';
+import Works from '../src/sections/Works';
+import Reviews from '../src/sections/Reviews';
+import ScrollToTopButton from '../src/components/ScrollToTopButton';
 
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`
-
-export default function Home() {
-  return <Title>My page</Title>
+export default function HomeIndex() {
+  return (
+    <>
+      <Home />
+      <About />
+      <Works />
+      <Reviews />
+      <ScrollToTopButton />
+    </>
+  );
 }
