@@ -56,7 +56,8 @@ const ReviewContainer = styled.div`
   width: 50%;
   position: relative;
   @media(max-width: 768px) {
-    width: 90%
+    width: 90%;
+    height: 70%;
   }
 `;
 
@@ -74,7 +75,6 @@ ReviewContainer.Inner = styled.div`
   @media(max-width: 768px) {
     padding: 2rem;
     padding-right: 8rem;
-    
   }
   padding-right: 8rem;
 `;
