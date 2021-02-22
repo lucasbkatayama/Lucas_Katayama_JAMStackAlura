@@ -12,7 +12,9 @@ function Store({ selectedId, setSelectedId }) {
     <div style={{ width: '80%', marginLeft: 'auto', marginRight: 'auto' }}>
       <List selectedId={selectedId} setSelectedId={setSelectedId} />
       <AnimatePresence>
-        {selectedId && imageHasLoaded && <Item id={selectedId} setSelectedId={setSelectedId} key="item" />}
+        {selectedId && imageHasLoaded && (
+          <Item id={selectedId} setSelectedId={setSelectedId} key="item" />
+        )}
       </AnimatePresence>
     </div>
   );
@@ -25,7 +27,9 @@ const Works = () => {
     <Container id="works">
       <div style={{ width: 'fit-content' }}>
         <h1 style={{ marginTop: '5rem', marginBottom: 0 }}>NOSSOS TRABALHOS</h1>
-        <h3 style={{ margin: 0, textAlign: 'end', marginBottom: '2rem' }}>portifolio</h3>
+        <h3 style={{ margin: 0, textAlign: 'end', marginBottom: '2rem' }}>
+          portifolio
+        </h3>
       </div>
 
       <AnimateSharedLayout type="crossfade">
@@ -39,9 +43,11 @@ const Container = styled.div`
   flex: 1;
   flex-wrap: wrap;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding-bottom: 5rem;
-  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.4);
   z-index: 1;
 `;
 

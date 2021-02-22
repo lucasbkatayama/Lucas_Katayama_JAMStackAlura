@@ -18,8 +18,10 @@ export const Header = styled.div`
 `;
 
 export const Navbar = styled.nav`
-  height: 65px;
   display: flex;
+  height: 100%;
+  width: 35%;
+  min-width: 340px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 `;

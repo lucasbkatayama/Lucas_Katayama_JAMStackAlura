@@ -16,7 +16,7 @@ const colors = {
   },
   primary: {
     main: {
-      color: '#D7385E',
+      color: 'green',
       contrastText: '#fff',
     },
   },
@@ -52,6 +52,6 @@ export default {
     xl: 1200, // extra large
   },
   borderRadius: '8px',
-  fontFamily: '\'PT Sans\', sans-serif',
+  fontFamily: "'PT Sans', sans-serif",
   transition: '200ms ease-in-out',
 };
